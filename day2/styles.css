@@ -1,0 +1,239 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'poppins',sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #ffffff, #f5f5f5);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      z-index: 1000;
+      animation: fadeDown 0.8s ease;
+    }
+
+    .navbar .logo {
+      font-size: 42px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-size: 32px;
+      transition: 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #ffa500;
+    }
+
+    .header {
+      height: 1000px;
+      background-image: url('adventure.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      color: white;
+      position: relative;
+      animation: zoomIn 2s ease;
+    }
+
+    .header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .header-content h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .header-content p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .searchbar {
+      display: flex;
+      max-width: 800px;
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      margin: auto;
+    }
+
+    .searchbar input {
+      flex: 1;
+      padding: 14px;
+      font-size: 24px;
+      border: none;
+      outline: none;
+    }
+
+    .searchbar button {
+      padding: 0 20px;
+      background-color: #ff5500;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .text{
+      padding: 50px;
+      font-weight: bolder;
+      font-size: 48px;
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out ;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 20px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .carts {
+      width: 800px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .carts img {
+      width: 800px;
+      height: 500px;
+    }
+
+    .carts h1 {
+      font-size: 42px;
+      margin: 15px 0 10px;
+    }
+
+    .carts p {
+        font-size:xx-large;
+      padding: 0 15px 20px;
+      color: #444;
+    }
+
+    .carts:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+    }
+    
+    .carts .explore-btn {
+  margin: 20px auto 20px;
+  padding: 10px 25px;
+  font-weight: bold;
+  background-color: transparent;
+  color: #f84504;
+  font-size: x-large;
+  border: 2px solid #f84504;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carts .explore-btn:hover {
+  background-color: #f84504;
+  color: white;
+}
+
+
+.load-more-container {
+      text-align: center;
+      padding: 20px;
+}
+
+.load-more-btn {
+  padding: 12px 30px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #ff3c00; 
+  color: white;
+  border: 2px solid #ff3c00;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  box-shadow: 0 5px 15px rgba(255, 60, 0, 0.4);
+}
+
+.load-more-btn:hover {
+  background-color: transparent;
+  color: #ff3c00;
+  box-shadow: none;
+}
+
+
+
+.footer {
+      background-color: #222;
+      color: white;
+      font-size: x-large;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 24px;
+}
+  
+
+@keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+      from { transform: scale(0.95); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+}
+  
