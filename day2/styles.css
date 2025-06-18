@@ -118,6 +118,27 @@
       cursor: pointer;
     }
 
+    .about-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.about-section h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.about-section p {
+  font-size: 36px;
+  line-height: 1.6;
+  max-width: 1900px;
+  margin: auto;
+}
+
+
     .text{
       padding: 50px;
       font-weight: bolder;
